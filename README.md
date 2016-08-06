@@ -1,2 +1,2 @@
 # ProjectEuler
-Writing solutions to the problems posted on Project Euler
+Python solutions to the problems on (Project Euler)[https://projecteuler.net/archives]
