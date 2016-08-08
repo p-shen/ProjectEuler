@@ -6,7 +6,8 @@ def solution(primes, n):
         while n % prime == 0:
             print(str(n) + "/" + str(prime) + "=" + str(n / prime))
             n = n / prime
-            largestFactor = prime
+            if n == 1:
+                return prime
 
 
 def is_prime(num):
@@ -25,7 +26,7 @@ def main():
     n = 600851475143
     largestFactor = 2
     primes = filter(is_prime, range(1, math.ceil(math.sqrt(n))))
-    solution(primes, n)
+    largestFactor = solution(primes, n)
     print(largestFactor)
 
 if __name__ == "__main__":
