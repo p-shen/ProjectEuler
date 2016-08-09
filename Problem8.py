@@ -1,6 +1,3 @@
-from functools import reduce
-
-
 def createListFromStringInput(str):
     ret = []
     for c in str:
